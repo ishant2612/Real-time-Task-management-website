@@ -1,0 +1,41 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #5757b5; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+.navb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96vw;
+  height: 5vh;
+  padding: 2vh 2vw;
+  border: 1px solid;
+  border-style: none none solid none;
+  background-color: #ececec;
+}
+
+.navb > p {
+  /* text-align: center; */
+  /* height: 100%; */
+  font-size: 2.4vh;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navb span {
+  background-color: orange;
+  height: 100%;
+  color: white;
+  padding: 0 0.5vw;
+}
+.btn > button {
+  font-size: 7vh;
+  border-radius: 50%;
+  /* background-color: white; */
+  color: white;
+}

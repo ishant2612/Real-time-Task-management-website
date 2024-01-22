@@ -1,0 +1,103 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.Login {
+  /* background-color: rgb(87, 87, 181); */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro {
+  /* background-color: ; */
+  position: absolute;
+  left: 0;
+  border-style: none solid none none;
+  width: 43vw;
+  /* display: flex; */
+  padding: 10vh 4vw;
+  text-align: start;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 50vh;
+}
+
+.intro h1 {
+  font-size: 7vh;
+  margin-bottom: 7vh;
+  /* border-style: none none solid none; */
+}
+.intro p {
+  font-size: 2vh;
+  width: 55%;
+  padding: 0 1vh;
+}
+
+.login-f {
+  background-color: white;
+  /* background-color: red; */
+  position: absolute;
+  right: 15vw;
+  /* border-style: none solid none none; */
+  /* width: 30vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 60vh; */
+  border: 2px solid black;
+  border-radius: 35px;
+  -webkit-box-shadow: -6px 1px 29px -8px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: -6px 1px 29px -8px rgba(0, 0, 0, 0.21);
+  box-shadow: -6px 1px 29px -8px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 10px;
+}
+.login-f h1 {
+  border-style: none none solid none;
+  width: 100%;
+  text-align: center;
+  /* margin-top: -5vh; */
+}
+.login-f p {
+  font-size: 1vw;
+  text-transform: capitalize;
+  text-decoration: underline;
+  /* margin-top: 4vh; */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 2vh 0;
+  border: 3px solid;
+  border-style: none none solid none;
+  /* background-color: red; */
+  /* justify-content: space-between; */
+}
+
+input {
+  margin: 1vh 1vw;
+  width: 15vw;
+  border: 1px solid transparent;
+  height: 3vh;
+  border-radius: 1em;
+  padding: 0 1vw;
+  background-color: transparent;
+}
+button {
+  width: 50%;
+  height: 4vh;
+  background-color: orange;
+  border: 1px solid transparent;
+}
