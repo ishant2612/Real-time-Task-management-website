@@ -106,7 +106,7 @@ const AssignTask = ({ onClose }) => {
         completed: false,
       });
 
-      console.log('Task assigned successfully!', newTaskDocRef.id);
+      alert('Task assigned successfully!');
       onClose(); // Close the AssignTask popup
     } catch (error) {
       console.error('Error assigning task to other user:', error);
