@@ -127,7 +127,7 @@ const TaskList = () => {
   const handleDelete = async (taskId) => {
     try {
       await deleteDoc(doc(firestore, 'tasks', taskId));
-
+      console.log('Task deleted successfully!');
     } catch (error) {
       console.error('Error deleting task:', error);
     }
@@ -136,7 +136,7 @@ const TaskList = () => {
   const handleEdit = async (taskId, newTitle, newDescription, newDueDate) => {
     try {
       await updateDoc(doc(firestore, 'tasks', taskId), { title: newTitle, description: newDescription, dueDate: newDueDate });
-
+      console.log('Task edited successfully!');
     } catch (error) {
       console.error('Error editing task:', error);
     }
@@ -149,7 +149,7 @@ const TaskList = () => {
 
       if (taskSnapshot.exists() && taskSnapshot.data().assignedTo === auth.currentUser.email) {
         await updateDoc(taskRef, { status: newStatus });
-
+        console.log('Task status updated successfully!');
       } else {
         console.error('Task not found or not assigned to the current user.');
       }

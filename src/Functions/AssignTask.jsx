@@ -106,6 +106,7 @@ const AssignTask = ({ onClose }) => {
         completed: false,
       });
 
+      console.log('Task assigned successfully!', newTaskDocRef.id);
       onClose(); // Close the AssignTask popup
       alert('Task assigned successfully!');
     } catch (error) {
