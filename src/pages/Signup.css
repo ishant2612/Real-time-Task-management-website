@@ -100,4 +100,5 @@ button {
   height: 4vh;
   background-color: orange;
   border: 1px solid transparent;
+  cursor: pointer;
 }

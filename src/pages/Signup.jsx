@@ -18,7 +18,7 @@ const Signup = () => {
       // Send verification email
       await sendEmailVerification(user);
 
-      console.log("Verification email sent successfully.");
+      alert("Verification email sent successfully.");
 
       // Other signup logic
       localStorage.setItem("token", user.accessToken);
